@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./parts/nav.ejs') %>
+
+<button> <a href="/delete/<%= product._id %>">delete</a>
+</button>
+<button> <a href="/update/<%= product._id %>">update</a>
+</button>
+    <div>
+
+        <img src="<%=product.image  %>" alt="">
+        <h1><%= product.title %></h1>
+        <p><%= product.description %></p>
+    </div>
+</body>
+</html>

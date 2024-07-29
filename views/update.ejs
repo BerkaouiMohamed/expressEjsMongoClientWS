@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+<%- include('./parts/nav.ejs') %>
+
+    <form action="/update/<%= product._id %>" method="post">
+      <input type="text" name="title" placeholder="title"  value="<%= product.title %>"/>
+      <input type="text" name="description" placeholder="title" value="<%= product.description %>"/>
+      <input type="text" name="image" placeholder="title" value="<%= product.image %>" />
+      <input type="submit" value="submit">
+    </form>
+  </body>
+</html>

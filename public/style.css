@@ -1,0 +1,11 @@
+nav{
+    display: flex;
+    height: 80px;
+    background-color: aqua;
+
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+}
